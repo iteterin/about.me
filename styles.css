@@ -1,0 +1,148 @@
+body {
+    /*font-family: Arial, sans-serif;*/
+    font-family: Consolas;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+}
+
+header {
+    /*background: #000000;*/
+    color: #ffffff;
+    border-color: #9c9c9c;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    /*margin: 10px 0;*/
+    margin: 10px auto;
+    background: #4b4b4b;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    text-wrap: pretty;
+    width: 60%;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #ffffff;
+}
+
+blockquote {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 20px;
+    padding: 3px;
+    border-left: 3px solid #ccc;
+    color: #489c03;
+    background-color: #dadada;
+}
+
+cite {
+    display: block;
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+}
+
+.image {
+    float: right; /* Отклоняем изображение влево */
+    margin-right: 20px; /* Отступ справа от изображения */
+    max-width: 100%; /* Ограничиваем ширину изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+
+details {
+    margin-bottom: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #b1b1b1;
+    text-wrap: pretty;
+}
+
+summary:hover {
+    text-decoration: none
+}
+
+#matrixCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Убираем на задний план */
+}
+
+
+.glow {
+    text-shadow: 
+        0 0 5px #000000,  /* Светлый эффект */
+        0 0 10px #ffffff, 
+        0 0 15px #489c03, /* Цветное свечение */
+        0 0 20px #489c03;
+}
+
+.glowsection {
+    text-shadow: 
+        0 0 5px #000000,  /* Светлый эффект */
+        0 0 10px #ffffff, 
+        0 0 15px #489c03; /* Цветное свечение */
+}
+.glowsectionjobs {
+    color:rgb(187, 216, 164);
+    text-shadow: 
+        0 0 5px #000000,  /* Светлый эффект */
+        0 0 10px #ffffff, 
+        0 0 25px #489c03; /* Цветное свечение */
+}
+
+a {
+    color: #b1b1b1; /* Цвет ссылки по умолчанию */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+a.clicked {
+    color: #489c03; /* Цвет ссылки после нажатия */
+}
+
+.circle-image {
+    width: 300px;         /* Ширина изображения */
+    height: 300px;        /* Высота изображения */
+    border-radius: 50%;   /* Закругление для создания круга */
+    overflow: clip;      /* Скрыть части изображения, выходящие за границы круга */
+    border: 5px solid #418509cb; /* Белая рамка вокруг круга (опционально) */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень (опционально) */
+    
+    float: right; /* Отклоняем изображение влево */
+    margin-right: 20px; /* Отступ справа от изображения */
+    max-width: 100%; /* Ограничиваем ширину изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+
+.circle-image img {
+    width: 100%;          /* Изображение занимает 100% ширины контейнера */
+    height: auto;         /* Автоматическая высота для сохранения пропорций */
+    display: block;       /* Убираем пробелы под изображением */
+    
+}
