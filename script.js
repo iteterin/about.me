@@ -1,14 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Получаем язык браузера
-    //const userLang = navigator.language || navigator.userLanguage;
-
-    // Проверяем, начинается ли язык с "ru"
-    //if (!userLang.startsWith("ru")) {
-        // Переадресуем на другую страницу
-        //window.location.href = "index-en.html"; // Замените на необходимый URL
-    //}
-});
-
 document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('section');
 
